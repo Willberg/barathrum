@@ -21,8 +21,9 @@ public class DaoTest {
     //    @Before
     @Test
     public void before() {
-        Long uid = 2L;
+        Long uid = 1L;
         User user = new User();
+        user.setUid(uid);
         user.setUserName(String.format("%s's userName", uid));
         user.setPhoneNumber(String.format("%s's phoneNumber", uid));
         user.setPassword(String.format("%s's password", uid));
