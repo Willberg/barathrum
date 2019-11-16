@@ -12,7 +12,7 @@ import java.util.List;
 import java.util.Optional;
 
 @RunWith(SpringRunner.class)
-@SpringBootTest(classes = UserMapper.class)
+@SpringBootTest
 public class DaoTest {
 
     @Autowired
