@@ -2,16 +2,15 @@ package fun.johntaylor.barathrum.dao.entity.user;
 
 import lombok.Data;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Data
 @Entity
 @Table(name = "t_user")
 public class User {
     @Id
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
+    @Column(length = 20)
     private Long uid;
 
     @Column(name = "user_name", length = 64)
